@@ -1,0 +1,25 @@
+"C:\Program Files\Java\jdk-11.0.8\bin\java.exe" -Djline.terminal=NONE "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\lib\idea_rt.jar=49935:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\bin" -Dfile.encoding=UTF-8 -classpath "D:\Projects\Scala Projects\target\scala-2.13\classes;C:\Users\Олег\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.13.3.jar;C:\Users\Олег\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.13.3.jar;C:\Users\Олег\.ivy2\cache\org.scala-lang\scala-library\srcs\scala-library-2.13.3-sources.jar;C:\Users\Олег\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.13.3.jar;C:\Users\Олег\AppData\Roaming\JetBrains\IdeaIC2020.2\plugins\Scala\lib\runners.jar" scala.tools.nsc.MainGenericRunner -usejavacp -Xjline:off
+Welcome to Scala 2.13.3 (Java HotSpot(TM) 64-Bit Server VM, Java 11.0.8).
+Type in expressions for evaluation. Or try :help.
+
+scala> val name = "Egor"
+val name: String = Egor
+
+scala> println(f"Hello Scala, this is $name")
+Hello Scala, this is Egor
+
+scala> val greetings = Array("Hello", "Hola", "Guten tag")
+val greetings: Array[String] = Array(Hello, Hola, Guten tag)
+
+scala> for (greet <- greetings) println(f"$greet Scala, this is $name")
+Hello Scala, this is Egor
+Hola Scala, this is Egor
+Guten tag Scala, this is Egor
+
+scala> val reverseName = name.reverse
+val reverseName: String = rogE
+
+scala> for (greet <- greetings) println(f"$greet Scala, this is $reverseName")
+Hello Scala, this is rogE
+Hola Scala, this is rogE
+Guten tag Scala, this is rogE
